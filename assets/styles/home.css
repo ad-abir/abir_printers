@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
 * {
     margin: 0;
@@ -31,6 +31,27 @@ body {
     z-index: -1;
 }
 
+.off-screen-menu {
+    background-color: rgb(34, 37, 49);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: right 1s ease;
+    z-index: 10;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
 .nav {
     position: absolute;
     top: 20px;
@@ -59,6 +80,24 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.close-button {
+    position: absolute;
+    left: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 2;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.close-button:hover {
+    transform: scale(1.2);
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
 .logo {
     color: white;
     text-align: center;
@@ -71,17 +110,4 @@ body {
 .logo span {
     font-weight: bold;
     color: #ff6806;
-}
-
-.side-menu {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    height: 100%;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: left 0.3s ease;
-    z-index: 3;
-    padding: 20px;
 }
