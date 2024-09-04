@@ -41,8 +41,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    text-align: left;
     font-size: 3rem;
     transition: right 1s ease;
     z-index: 10;
@@ -98,6 +98,43 @@ body {
     background-color: rgb(255, 255, 255, 0.2);
 }
 
+.menu-contents {
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    margin-left: 10%;
+}
+
+.menu-contents ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-contents li {
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+.menu-contents li a {
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 1px 15px;
+    display: block;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu-contents li a.current-page {
+    color: red;
+}
+
+.menu-contents li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .logo {
     color: white;
     text-align: center;
@@ -109,5 +146,5 @@ body {
 
 .logo span {
     font-weight: bold;
-    color: #ff6806;
+    color: red;
 }
