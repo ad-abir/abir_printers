@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
     <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
@@ -18,12 +20,30 @@
         <video autoplay loop muted playsinline class="cover-video">
             <source src="assets/video/web.mp4" type="video/mp4">
         </video>
+
+        <div class="container search-container">
+
+            <div class="tag-line-content">
+                <h1>Crafting Impressions, One Print at a Time</h1>
+            </div>
+
+            <form action="https://www.google.com/search" class="search" id="search-bar">
+                <input type="search" placeholder="Search" name="q" class="search__input">
+    
+                <div class="search__button" id="search-button">
+                    <i class="ri-search-line search__icon"></i>
+                    <i class="ri-close-line search__close"></i>
+                </div>
+            </form>
+        </div>
     </div>
 
     <div class="off-screen-menu" id="off-screen-menu">
         <div class="nav">
             <button class="close-button" id="close-button">Close</button>
-            <h2 data-cursor-text="Welcome" class="logo"><span>abir</span>_printers</h2>
+            <h2 data-cursor-text="Welcome" data-cursor-stick class="logo">
+                <span>abir</span>_printers
+            </h2>
         </div>
         <div class="menu-contents">
             <ul>
@@ -46,6 +66,7 @@
     </div>
 
     <script src="assets/js/menu-toggle.js" defer></script>
+    <script src="assets/js/search-bar.js" defer></script>
     <script>
         const cursor = new MouseFollower({
             container: document.body,
