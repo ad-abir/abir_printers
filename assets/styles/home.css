@@ -56,6 +56,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.1;
+    text-align: left;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
@@ -262,4 +263,49 @@ body {
 .logo span {
     font-weight: bold;
     color: red;
+}
+
+.short_content_about {
+    margin: 0 auto; /* Centers the container horizontally on the page */
+    padding: 20px;
+    max-width: 800px; /* Sets a maximum width for the text container */
+    text-align: justify;
+    font-family: 'Poppins', sans-serif; /* Change to your preferred font */
+    font-size: 22px; /* Adjust font size as needed */
+    line-height: 2; /* Increases line height for better readability */
+    color: #333; /* Text color */
+    margin: 5%;
+    opacity: 0;
+    transform: translateY(20px); /* Element starts slightly down */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up {
+    opacity: 1;  /* Full opacity when fade-in is triggered */
+    transform: translateY(0);  /* Moves to original position */
+}
+
+.short_content_about p {
+    margin: 0;
+    padding: 0;
+}
+
+.short_content_about p span {
+    font-weight: bold;
+}
+
+.read_more_btn {
+    display: inline-block;
+    background: transparent;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.read_more_btn:hover {
+    transform: scale(1.2);
 }
