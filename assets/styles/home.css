@@ -309,3 +309,30 @@ body {
 .read_more_btn:hover {
     transform: scale(1.2);
 }
+
+.scroller img {
+    width: 100%;
+    height: 350px;
+}
+
+.scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    flex-wrap: nowrap;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(-100%);
+    }
+}
