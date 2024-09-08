@@ -61,7 +61,7 @@ body {
 }
 
 .tag-line-content h1 span {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .search-container {
@@ -362,36 +362,94 @@ body {
     transform: scale(1.2);
 }
 
+.future-planning {
+    margin: 10% 0 10% 0;
+}
+
 .future_of_abir_printers {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    gap: 20px; /* Space between the image section and the text section */
+    gap: 20px;
 }
 
 .images_of_planning {
     display: flex;
-    flex-direction: row; /* Align images horizontally */
-    gap: 10px; /* Space between images */
+    flex-direction: row;
+    gap: 10px; 
+    justify-content: flex-end;
+    margin-left: 3%;
+    position: relative;
 }
 
 .images_of_planning img {
     width: 100%;
-    max-width: 200px; /* Adjust as needed for your design */
+    max-width: 200px;
     height: auto;
-    border-radius: 8px; /* Optional: Adds rounded corners to images */
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.images_of_planning img:not(:first-child) {
+    margin-left: -50px; /* Adjust this value to control the overlap */
+    z-index: 0; /* Ensures overlapping behind */
+    transition: transform 1s ease; /* Optional: Add a hover effect */
+}
+
+.images_of_planning img:hover {
+    transform: scale(1.2) translateY(0); /* Ensures hover effect works on all images */
+    z-index: 2;
+}
+
+.images_of_planning img:nth-child(1),
+.images_of_planning img:nth-child(3) {
+    transform: translateY(40px);
+    transition: transform 1s ease; /* Moves image 1 and 3 down by 20px */
+}
+
+.images_of_planning img:nth-child(1):hover,
+.images_of_planning img:nth-child(3):hover {
+    transform: scale(1.2) translateY(40px); /* Combines hover effect with height adjustment */
 }
 
 .stories_of_planning {
-    flex: 1; /* Takes up the remaining space */
-    max-width: 600px; /* Adjust as needed for your design */
+    /* flex: 1; */
+    max-width: 600px;
+    text-align: justify;
+    margin-right: 4%;
 }
 
 .stories_of_planning p {
     font-size: 16px;
-    line-height: 1.5;
-    color: #333; /* Adjust color as needed */
+    line-height: 2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333;
     margin: 0;
 }
 
+.container.future-planning {
+    display: flex;
+    flex-direction: column;
+}
+
+.future-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: transparent; /* Blue background color */
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 78px;
+    transition: transform 0.5s ease;
+}
+
+.future-btn:hover {
+    transform: scale(1.2);
+}
