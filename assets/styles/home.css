@@ -269,10 +269,33 @@ body {
     color: red;
 }
 
+.container.short_content_about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px; /* Space between content and image */
+}
+
+.content {
+    flex: 1; /* Make the content take up space proportionally */
+}
+
+.printing_image {
+    max-width: 50%; /* Adjust the image width */
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(51, 51, 51, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.printing_image:hover {
+    transform: scale(1.1);
+}
+
 .short_content_about {
     margin: 0 auto; /* Centers the container horizontally on the page */
     padding: 20px;
-    max-width: 800px; /* Sets a maximum width for the text container */
+    /* max-width: 800px; */
     text-align: justify;
     font-family: 'Poppins', sans-serif; /* Change to your preferred font */
     font-size: 22px; /* Adjust font size as needed */
@@ -430,7 +453,7 @@ body {
     margin: 0;
 }
 
-.container.future-planning {
+.future-planning {
     display: flex;
     flex-direction: column;
 }
