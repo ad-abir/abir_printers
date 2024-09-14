@@ -58,10 +58,25 @@ body {
     line-height: 1.1;
     text-align: left;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    opacity: 0; /* Start with the h1 hidden */
+    transform: translateY(50px); /* Start position below */
+    animation: fadeUp 1.5s ease-out forwards; /* Fade and move up */
 }
 
 .tag-line-content h1 span {
     font-weight: 300;
+}
+
+/* Keyframes for fade up effect */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .search-container {
@@ -255,8 +270,9 @@ body {
     transform: scale(1.2);
 }
 
-.logo {
+/* .logo {
     color: white;
+    border: 50%;
     text-align: center;
     z-index: 1;
     margin: 0;
@@ -267,6 +283,20 @@ body {
 .logo span {
     font-weight: bold;
     color: red;
+} */
+ 
+.logo {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 1;
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    display: inline-block;
+    width: 240px;
+    height: auto;
 }
 
 .container.short_content_about {
@@ -284,7 +314,7 @@ body {
     max-width: 50%; /* Adjust the image width */
     height: auto;
     object-fit: cover;
-    margin-bottom: 68px;
+    margin-bottom: 14px;
     box-shadow: 0 4px 8px rgba(51, 51, 51, 0.5);
     transition: transform 0.5s ease;
 }
@@ -388,6 +418,19 @@ body {
 
 .future-planning {
     margin: 10% 0 10% 0;
+    opacity: 0; /* Hidden initially */
+    transform: translateY(50px); /* Start from below */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition for fade and move */
+}
+
+.future-planning.fade-in {
+    opacity: 1;
+    transform: translateY(0); /* Moves up when scrolled into view */
+}
+
+.future-planning.fade-out {
+    opacity: 0;
+    transform: translateY(50px); /* Moves down when scrolled away */
 }
 
 .future_of_abir_printers {
@@ -410,7 +453,7 @@ body {
 .images_of_planning img {
     width: 100%;
     max-width: 200px;
-    height: auto;
+    height: 100%;
     border-radius: 8px;
     position: relative;
     z-index: 1;
@@ -486,6 +529,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 50px 80px;
+    background-color: black;
 }
 
 footer .col {
@@ -500,19 +545,25 @@ footer .logo {
 }
 
 footer h4 {
-    font-size: 14px;
+    font-size: 18px;
     padding-bottom: 20px;
 }
 
+.col p, 
+.col h4, 
+.copyright p {
+    color: white;
+}
+
 footer p {
-    font-size: 13px;
+    font-size: 15px;
     margin: 0 0 8px 0;
 }
 
 footer a {
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
-    color: #222;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -527,7 +578,7 @@ footer .follow i {
 }
 
 footer .install .row img {
-    border: 1px solid #088178;
+    border: 1px solid gold;
     border-radius: 6px;
 }
 
@@ -536,11 +587,13 @@ footer .install img {
 }
 
 footer .follow i:hover,
-footer a:hover {
-    color: #088178;
+footer a:hover,
+.col p:hover {
+    color: gold;
 }
 
 footer .copyright {
     width: 100%;
     text-align: center;
 }
+
