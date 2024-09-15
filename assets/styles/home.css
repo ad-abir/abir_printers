@@ -58,16 +58,15 @@ body {
     line-height: 1.1;
     text-align: left;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    opacity: 0; /* Start with the h1 hidden */
-    transform: translateY(50px); /* Start position below */
-    animation: fadeUp 1.5s ease-out forwards; /* Fade and move up */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeUp 1.5s ease-out forwards;
 }
 
 .tag-line-content h1 span {
     font-weight: 300;
 }
 
-/* Keyframes for fade up effect */
 @keyframes fadeUp {
     0% {
         opacity: 0;
@@ -521,10 +520,6 @@ body {
     transform: scale(1.2);
 }
 
-
-
-
-
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -572,7 +567,7 @@ footer .follow {
 }
 
 footer .follow i {
-    color: #465b52;
+    color: white;
     padding-right: 4px;
     cursor: pointer;
 }
