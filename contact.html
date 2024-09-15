@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - abir_printers</title>
+    <link rel="stylesheet" href="assets/styles/contact.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+</head>
+
+<body class="contact-cover">
+
+    <div class="off-screen-menu" id="off-screen-menu">
+        <div class="nav">
+            <button class="close-button" id="close-button">Close</button>
+            <img data-cursor-text="Welcome" data-cursor-stick class="logo" src="assets/images/logo.png" alt="abir_printers">
+        </div>
+        <div class="menu-contents">
+            <ul>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link current-page">Contact</a></li>
+            </ul>
+        </div>        
+    </div>
+
+    <div class="nav">
+        <button class="menu-button" id="menu-button">Menu</button>
+         <img data-cursor-text="Welcome" data-cursor-stick class="logo" src="assets/images/logo.png" alt="abir_printers">
+    </div>
+    
+    <script src="assets/js/menu-toggle.js" defer></script>
+    <script src="assets/js/search-bar.js" defer></script>
+    <script src="assets/js/fade-up_text.js" defer></script>
+    <script src="assets/js/img-slide-show.js" defer></script>
+    <script src="assets/js/fade_up_futureplan.js" defer></script>
+    <script>
+        const cursor = new MouseFollower({
+            container: document.body,
+            speed: 0.3
+        });
+    </script>
+</body>
+</html>
