@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - abir_printers</title>
+    
+    <link rel="stylesheet" href="assets/styles/body_style.css">
     <link rel="stylesheet" href="assets/styles/contact.css">
+    <link rel="stylesheet" href="assets/styles/navbar.css">
     <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
@@ -19,7 +22,27 @@
 
 </head>
 
-<body class="contact-cover">
+<body>
+    <div class="contact-cover">
+        <div class="contact-cover">
+            <form action="" class="contact-us">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Your Name" id="name" name="name" required>
+        
+                <label for="company">Company:</label>
+                <input type="text" placeholder="Company name" id="company" name="company">
+        
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Your Email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea placeholder="Your Message" id="message" name="message" rows="4" required></textarea>
+        
+                <button class="submit-btn" type="submit">Send</button>
+            </form>
+        </div>
+        
+    </div>
 
     <div class="off-screen-menu" id="off-screen-menu">
         <div class="nav">
@@ -29,8 +52,10 @@
         <div class="menu-contents">
             <ul>
                 <li><a href="home.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="about_us.html" class="nav-link">About Us</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="explore.html" class="nav-link">Explore</a></li>
+                <li><a href="vision.html" class="nav-link">Vision</a></li>
                 <li><a href="contact.html" class="nav-link current-page">Contact</a></li>
             </ul>
         </div>        
