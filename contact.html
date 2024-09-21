@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - abir_printers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
     
     <link rel="stylesheet" href="assets/styles/body_style.css">
     <link rel="stylesheet" href="assets/styles/contact.css">
@@ -26,7 +27,7 @@
 
 <body>
     <div class="contact-cover">
-        <div class="contact-cover">
+        <!-- <div class="contact-cover">
             <form action="" class="contact-us">
                 <label for="name">Name:</label>
                 <input type="text" placeholder="Your Name" id="name" name="name" required>
@@ -41,9 +42,63 @@
                 <textarea placeholder="Your Message" id="message" name="message" rows="4" required></textarea>
         
                 <button class="submit-btn" type="submit">Send</button>
-            </form>
-        </div>
-        
+            </form> -->   
+
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>
+                    "Let us transform your ideas into stunning print! 
+                    Whether you need custom designs, high-quality prints, or personalized solutions, we’re here to help. 
+                    Don’t hesitate to contact us – we’re excited to collaborate on your next project and make it exceptional!"
+                </p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p data-cursor-text="View Google Map">123 Main St, Anytown, USA</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p data-cursor-text="Make a Call">+01 2372 489 /(+880) 01 2345 6789</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text"> 
+                            <h3>Email</h3>
+                            <p data-cursor-text="Send an Email">info@yourdomain.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Your Message</span>
+                        </div>
+                        <div class="inputBox">
+                            <button class="send-button">Send</button>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
 
     <div class="off-screen-menu" id="off-screen-menu">
