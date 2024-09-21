@@ -213,7 +213,8 @@
 .scroller img {
     width: 100%;
     height: 350px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); */
+    border: 1px solid  #000000;
 }
 
 .scroller__inner {
@@ -309,6 +310,7 @@
 
 .images_of_planning img:hover {
     transform: scale(1.2) translateY(0);
+    filter: drop-shadow(1px 1px 20px black);
     z-index: 2;
 }
 
