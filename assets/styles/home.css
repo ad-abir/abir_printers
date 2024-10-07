@@ -210,6 +210,15 @@
     transform: scale(1.2);
 }
 
+.scroller {
+    text-align: center;
+}
+
+.scroller h2 {
+    color: #333;
+    font-size: 42px;
+}
+
 .scroller img {
     width: 100%;
     height: 350px;
@@ -323,6 +332,11 @@
 .images_of_planning img:nth-child(1):hover,
 .images_of_planning img:nth-child(3):hover {
     transform: scale(1.2) translateY(40px);
+}
+
+.stories_of_planning h2 {
+    color: #333;
+    font-size: 42px;
 }
 
 .stories_of_planning {
