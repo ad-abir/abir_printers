@@ -1,8 +1,8 @@
 .about-cover {
-    background-image: url('../images/about-cover.jpg');
+    background-image: url('../images/about-cover1.jpg');
     background-repeat: no-repeat;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background-size: cover;
     background-position: center;
     display: flex;
