@@ -208,6 +208,9 @@
 
 .read_more_btn:hover {
     transform: scale(1.2);
+    background-color: black;
+    color: white;
+    border: none;
 }
 
 .scroller {
@@ -266,6 +269,9 @@
 
 .explore_btn:hover {
     transform: scale(1.2);
+    background-color: black;
+    color: white;
+    border: none;
 }
 
 .future-planning {
@@ -376,4 +382,36 @@
 
 .future-btn:hover {
     transform: scale(1.2);
+    background-color: black;
+    color: white;
+    border: none;
 }
+
+.our_gallery h2 {
+    color: #333;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
