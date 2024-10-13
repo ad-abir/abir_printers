@@ -12,6 +12,8 @@
 
     <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
     <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
@@ -87,7 +89,7 @@
     
 
     <div class="scroller" data-speed="fast">
-        <h2>Clients</h2>
+        <h2>Our Partners</h2>
         <div class="scroller__inner">
             <a href="https://unimedunihealth.com/" target="_blank">
                 <img data-cursor-text="Visit" src="assets/images/unimed.jpg" alt="unimed">
@@ -133,6 +135,21 @@
             </div>
         </div>
         <button class="future-btn">Our Vision</button>
+    </div>
+
+    <div class="our_gallery">
+        <h2>Gallery</h2>
+        <div class="swipe">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/1.JPG" alt="Image 1"></div>
+                    <div class="swiper-slide"><img src="assets/images/2.JPG" alt="Image 2"></div>
+                    <div class="swiper-slide"><img src="assets/images/3.JPG" alt="Image 3"></div>
+                    <div class="swiper-slide"><img src="assets/images/4.JPG" alt="Image 4"></div>            
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </div>
 
     <!-- <div>
@@ -193,11 +210,14 @@
     <script src="assets/js/fade-up_text.js" defer></script>
     <script src="assets/js/img-slide-show.js" defer></script>
     <script src="assets/js/fade_up_futureplan.js" defer></script>
+    <script src="assets/js/swiper.js" defer></script>
     <script>
         const cursor = new MouseFollower({
             container: document.body,
             speed: 0.3
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
