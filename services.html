@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Abir Printers</title>
-    <link rel="stylesheet" href="assets/styles/services.css"> <!-- Link to your CSS file -->
+    <title>Services - abir_printers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/styles/body_style.css">
+    <link rel="stylesheet" href="assets/styles/services.css">
+    <link rel="stylesheet" href="assets/styles/navbar.css">
+    <link  rel="stylesheet" href="assets/styles/footer.css">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
 </head>
+
 <body>
+
     <div class="services-container">
         <h1>Our Services</h1>
         <p>At Abir Printers, we take pride in delivering top-quality printing solutions tailored to meet your needs. With state-of-the-art technology and a team dedicated to precision, we provide an extensive range of services, including:</p>
@@ -48,5 +68,88 @@
 
         <p>Whether you need sleek brochures, durable packaging, or personalized stationery, Abir Printers is your trusted partner for all things printing. <a href="#contact">Contact us</a> today for customized solutions tailored to your exact specifications.</p>
     </div>
+
+    <div class="off-screen-menu" id="off-screen-menu">
+        <div class="nav">
+            <button class="close-button" id="close-button">Close</button>
+            <img data-cursor-text="Welcome" data-cursor-stick class="logo" src="assets/images/logo.png" alt="abir_printers">
+        </div>
+        <div class="menu-contents">
+            <ul>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about_us.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link current-page">Services</a></li>
+                <li><a href="explore.html" class="nav-link">Explore</a></li>
+                <li><a href="vision.html" class="nav-link">Vision</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>        
+    </div>
+
+    <div class="nav">
+        <button class="menu-button" id="menu-button">Menu</button>
+         <img data-cursor-text="Welcome" data-cursor-stick class="logo" src="assets/images/logo.png" alt="abir_printers">
+    </div>
+
+    <footer class="section-p1">
+        <div class="col">
+            <!-- <img class="logo" src="../assets/images/logo.png" alt=""> -->
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 27/11/1, Topkhana Road, Segun Bagicha,<br> Dhaka-1000, Bangladesh </p>
+            <p><strong>Phone:</strong> +01 2372 489 /(+880) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 09:00 - 18:00, Sat - Thu</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>Services</h4>
+            <a href="#">Business Card Printing</a>
+            <a href="#">Flyers & Brochures</a>
+            <a href="#">Poster & Banner Printing</a>
+            <a href="#">Invitation Cards</a>
+        </div>
+        <div class="col">
+            <h4>Why Choose Us?</h4>
+            <p>High-Quality Printing Solutions</p>
+            <p>Affordable Pricing</p>
+            <p>Eco-Friendly Materials</p>
+            <!-- <img src="../assets/images/printing/quality.png" alt="High Quality Printing"> -->
+        </div>
+        <div class="col">
+            <h4>Design Your Own</h4>
+            <a href="#">Send Us Your Design</a>
+        </div>
+        <div class="copyright">
+            <p>© 2024, it's an abir_ptinters Project</p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/menu-toggle.js" defer></script>
+    <script src="assets/js/search-bar.js" defer></script>
+    <script src="assets/js/fade-up_text.js" defer></script>
+    <script src="assets/js/img-slide-show.js" defer></script>
+    <script src="assets/js/fade_up_futureplan.js" defer></script>
+    <script>
+        const cursor = new MouseFollower({
+            container: document.body,
+            speed: 0.3
+        });
+    </script>
 </body>
 </html>
