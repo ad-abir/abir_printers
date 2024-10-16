@@ -210,7 +210,7 @@
     transform: scale(1.2);
     background-color: black;
     color: white;
-    border: none;
+    /* border: none; */
 }
 
 .scroller {
@@ -271,7 +271,7 @@
     transform: scale(1.2);
     background-color: black;
     color: white;
-    border: none;
+    /* border: none; */
 }
 
 .future-planning {
@@ -384,7 +384,7 @@
     transform: scale(1.2);
     background-color: black;
     color: white;
-    border: none;
+    /* border: none; */
 }
 
 .our_gallery h2 {
