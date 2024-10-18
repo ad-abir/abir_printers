@@ -1,0 +1,29 @@
+{
+    "menuItems": [
+      {
+        "name": "Home",
+        "link": "home.html"
+      },
+      {
+        "name": "About Us",
+        "link": "about_us.html"
+      },
+      {
+        "name": "Services",
+        "link": "services.html"
+      },
+      {
+        "name": "Explore",
+        "link": "explore.html"
+      },
+      {
+        "name": "Vision",
+        "link": "vision.html"
+      },
+      {
+        "name": "Contact",
+        "link": "contact.html"
+      }
+    ]
+  }
+  
