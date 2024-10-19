@@ -1,0 +1,46 @@
+{
+    "contact": {
+      "heading": "Contact",
+      "address": "27/11/1, Topkhana Road, Segun Bagicha,<br> Dhaka-1000, Bangladesh",
+      "phone": "+01 2372 489 /(+880) 01 2345 6789",
+      "hours": "09:00 - 18:00, Sat - Thu",
+      "social": ["facebook-f", "twitter", "instagram", "pinterest-p", "youtube"]
+    },
+    "about": {
+      "heading": "About",
+      "links": [
+        { "text": "About us", "href": "#" },
+        { "text": "Delivery Information", "href": "#" },
+        { "text": "Privacy Policy", "href": "#" },
+        { "text": "Terms & Conditions", "href": "#" },
+        { "text": "Contact Us", "href": "#" }
+      ]
+    },
+    "services": {
+      "heading": "Services",
+      "links": [
+        { "text": "Business Card Printing", "href": "#" },
+        { "text": "Flyers & Brochures", "href": "#" },
+        { "text": "Poster & Banner Printing", "href": "#" },
+        { "text": "Invitation Cards", "href": "#" }
+      ]
+    },
+    "whyChooseUs": {
+      "heading": "Why Choose Us?",
+      "reasons": [
+        "High-Quality Printing Solutions",
+        "Affordable Pricing",
+        "Eco-Friendly Materials"
+      ]
+    },
+    "designYourOwn": {
+      "heading": "Design Your Own",
+      "links": [
+        { "text": "Send Us Your Design", "href": "#" }
+      ]
+    },
+    "copyright": {
+      "text": "© 2024, it's an abir_printers Project"
+    }
+  }
+  
