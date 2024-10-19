@@ -1,0 +1,46 @@
+{
+  "partners": [
+    {
+      "name": "Unimed",
+      "link": "https://unimedunihealth.com/",
+      "image": "assets/images/unimed.jpg",
+      "alt": "unimed"
+    },
+    {
+      "name": "Square",
+      "link": "https://www.squarepharma.com.bd/",
+      "image": "assets/images/square.jpg",
+      "alt": "square"
+    },
+    {
+      "name": "Incepta",
+      "link": "https://www.inceptapharma.com/",
+      "image": "assets/images/incepta.jpg",
+      "alt": "incepta"
+    },
+    {
+      "name": "Popular",
+      "link": "https://www.popular-pharma.com/",
+      "image": "assets/images/popular.jpg",
+      "alt": "popular"
+    },
+    {
+      "name": "Roche",
+      "link": "https://www.roche.com.bd/",
+      "image": "assets/images/roche.jpg",
+      "alt": "roche"
+    },
+    {
+      "name": "Navana",
+      "link": "https://navanapharma.com/",
+      "image": "assets/images/navana.jpg",
+      "alt": "navana"
+    },
+    {
+      "name": "Delta",
+      "link": "https://www.deltapharmabd.com/",
+      "image": "assets/images/delta.jpg",
+      "alt": "delta"
+    }
+  ]
+}
