@@ -22,6 +22,10 @@ footer h4 {
     padding-bottom: 20px;
 }
 
+.icon i {
+    margin-right: 4px;
+}
+
 .col p, 
 .col h4, 
 .copyright p {
