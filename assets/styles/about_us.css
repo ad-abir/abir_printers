@@ -1,5 +1,4 @@
 .about-cover {
-    background-image: url('../images/about-cover1.jpg');
     background-repeat: no-repeat;
     width: 100%;
     height: 70vh;
@@ -9,6 +8,7 @@
     justify-content: center;
     align-items: center;
 }
+
 
 /* .contact-cover h1 {
     font-size: 4rem;
