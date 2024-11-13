@@ -21,6 +21,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.mf-cursor {
+    color: black;
+}
+
 .center {
     display: flex;
     text-align: center;
