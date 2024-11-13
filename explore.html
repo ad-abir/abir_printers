@@ -31,18 +31,31 @@
         <!-- Background image will be set dynamically here -->
     </div>
 
-    
+    <div class="center" id="preloader">
+        <div class="ring"></div>
+        <span>Loading...</span>
+    </div>  
 
     <div class="explore-container">
-        <swiper-container class="mySwiper" navigation="true">
+        <swiper-container class="mySwiper" navigation="true"  loop="true" looped-slides="3">
             <swiper-slide>
-                <div class="left-content">
-                    <img src="assets/images/1.JPG" alt="Image 1">
+                <div class="content">
+                    <div class="left-content">
+                        <swiper-container class="mySwiper" navigation="false" autoplay loop>
+                            <swiper-slide>
+                                <img src="assets/images/1.JPG" alt="Image 1">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="assets/images/2.JPG" alt="Image 2">
+                            </swiper-slide>
+                        </swiper-container>
+                    </div>
+                    <div class="right-content">
+                        <h3>Heading</h3>
+                        <p>This is my content for now.</p>
+                    </div>
                 </div>
-                <div class="right-content">
-                    <p>This is my content for now.</p>
-                </div>
-        </swiper-slide>
+            </swiper-slide>
             <swiper-slide>Slide 2</swiper-slide>
             <swiper-slide>Slide 3</swiper-slide>
             <swiper-slide>Slide 4</swiper-slide>
@@ -51,9 +64,9 @@
             <swiper-slide>Slide 7</swiper-slide>
             <swiper-slide>Slide 8</swiper-slide>
             <swiper-slide>Slide 9</swiper-slide>
-          </swiper-container>
+        </swiper-container>
 
-          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     </div>
 
     <!-- <div class="explore-container">
@@ -96,6 +109,7 @@
         
     </footer>
     
+    <script src="assets/js/preloader.js" defer></script>
     <script src="assets/js/explore-cover-img.js" defer></script>
     <script src="assets/js/menu-items-fetch.js" defer></script>
     <script src="assets/js/menu-toggle.js" defer></script>
