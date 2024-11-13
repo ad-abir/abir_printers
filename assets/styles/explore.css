@@ -54,6 +54,7 @@ p {
 .service-item p {
     color: #777;
 }  */
+
 swiper-container {
     width: 100%;
     height: 900px;
@@ -66,6 +67,7 @@ swiper-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 10px 0px 10px;
   }
 
   swiper-slide img {
@@ -74,20 +76,36 @@ swiper-container {
     height: 100%;
     object-fit: cover;
   }
+  
+  .content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
 
-.left-content,
-.right-content {
-    flex: 1;
-    padding: 10px;
+.left-content{
+    max-width: 30%;
+    overflow-x: hidden;
 }
 
-.left-content img {
-    width: 50%;
+.left-content img{
+    width: 100%;
     height: auto;
-    margin-left: 200px;
+}
+
+.right-content {
+    width: 50%;
+    align-self: flex-start;
+}
+
+.right-content h3 {
+    text-align: left;
+    margin: 120px 0px 0px 90px;
 }
 
 .right-content p {
     font-size: 16px;
     text-align: left;
+    margin: 50px 0px 0px 90px;
 }
