@@ -1,4 +1,4 @@
 # Ignore the .env file
 .env
-images/
-video/
+assets/images/
+assets/video/
