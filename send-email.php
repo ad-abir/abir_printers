@@ -29,15 +29,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'], $_POST['email'
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
 
-    $mail = new PHPMailer(true);
+    $mail = new PHPMailer();
 
     $mail->isSMTP();
     $mail->SMTPAuth = true;
 
-    // Use credentials from the .env file
     $mail->Host = $emailHost;
     $mail->Port = $emailPort;
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
     $mail->Username = $emailUsername;
     $mail->Password = $emailPassword;
@@ -47,12 +45,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'], $_POST['email'
     $mail->Subject = "New Message from " . $name;
     $mail->Body = $message;
 
-    try {
-        $mail->send();
-        echo "Email has been sent!";
-    } catch (Exception $e) {
-        echo "Error: {$mail->ErrorInfo}";
+    // send the message
+    if (!$mail->send()) {
+        echo 'Message could not be sent.';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+    } else {
+        echo 'Message has been sent';
     }
+
 } else {
     echo "Error: Missing form data.";
 }
