@@ -152,17 +152,17 @@ swiper-container {
 }
 
 .right-content {
-    width: 50%;
+    width: 1000px;
     align-self: flex-start;
+    margin: 140px 0px 0px 50px;
 }
 
 .right-content h3 {
     text-align: left;
-    margin: 120px 0px 0px 90px;
+    padding-bottom: 30px;
 }
 
 .right-content p {
     font-size: 16px;
     text-align: left;
-    margin: 50px 0px 0px 90px;
 }
