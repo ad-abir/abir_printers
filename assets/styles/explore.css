@@ -1,14 +1,3 @@
-.explore-cover {
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 70vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* .explore-container {
     max-width: 800px;
     margin: 40px auto;
