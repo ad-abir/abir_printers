@@ -1,15 +1,3 @@
-.about-cover {
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 70vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 /* .contact-cover h1 {
     font-size: 4rem;
     color: #fff;
