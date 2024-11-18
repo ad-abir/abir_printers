@@ -76,12 +76,14 @@ swiper-container {
 
 .right-content {
     position: relative;
-    width: 1000px;
+    width: auto;
+    max-width: 1000px;
     align-self: flex-start;
     margin: 140px 0px 0px 50px;
     background-color: #f0f8ff;
     padding: 20px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 @property --angle {
@@ -93,14 +95,13 @@ swiper-container {
 .right-content::after, .right-content::before {
     content: '';
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: calc(100% + 6px);
+    width: calc(100% + 6px);
     background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
+    transform: translate(-50%, -50%);
     z-index: -1;
-    padding: 3px;
     border-radius: 10px;
     animation: 3s spin linear infinite;
 }
@@ -127,4 +128,5 @@ swiper-container {
 .right-content p {
     font-size: 16px;
     text-align: left;
+    word-wrap: break-word;
 }
