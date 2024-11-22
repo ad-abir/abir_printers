@@ -1,5 +1,5 @@
 # Ignore the .env file
 .env
-assets/images/
-assets/video/
+# assets/images/
+# assets/video/
 /vendor/
