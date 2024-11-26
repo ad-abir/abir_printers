@@ -1,33 +1,24 @@
 <?php
-header("Content-Type: application/json");
-header("Access-Control-Allow-Origin: *");
+// Include the database connection
+include 'config.php';
 
-// Database connection
-$host = 'localhost';
-$user = 'root'; // Replace with your MySQL username
-$password = ''; // Replace with your MySQL password
-$dbname = 'abir_printers'; // Your database name
-
-// Connect to the database
-$conn = new mysqli($host, $user, $password, $dbname);
-
-if ($conn->connect_error) {
-    die(json_encode(["error" => "Database connection failed: " . $conn->connect_error]));
-}
-
-// Fetch data from the partners_img table
-$query = "SELECT * FROM partners_img";
-$result = $conn->query($query);
+// Query to fetch data
+$sql = "SELECT * FROM partners_img";
+$result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    $partners = [];
     while ($row = $result->fetch_assoc()) {
-        $partners[] = $row;
+        echo "<div class='partner-item'>";
+        echo "<a href='" . $row['link'] . "' target='_blank'>";
+        echo "<img src='" . $row['image'] . "' alt='" . $row['alt'] . "'>";
+        // echo "<p>" . $row['name'] . "</p>";
+        echo "</a>";
+        echo "</div>";
     }
-    echo json_encode($partners);
 } else {
-    echo json_encode(["message" => "No data found"]);
+    echo "<p>No partners found.</p>";
 }
 
+// Close connection
 $conn->close();
 ?>
