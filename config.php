@@ -1,12 +1,14 @@
 <?php
-// Load .env variables
-require_once __DIR__ . '/vendor/autoload.php';
+$servername = "localhost"; // Replace with your database host
+$username = "root"; // Replace with your database username
+$password = ""; // Replace with your database password
+$dbname = "abir_printers"; // Replace with your database name
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Access environment variables
-$appName = getenv('APP_NAME');
-$dbHost = getenv('DB_HOST');
-$mailUsername = getenv('MAIL_USERNAME');
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 ?>
