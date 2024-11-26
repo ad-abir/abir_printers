@@ -30,9 +30,17 @@
 <body>
     <!-- Cover Section -->
     <div class="cover">
+        <?php include 'fetch_video_cover.php'; ?> <!-- Include the PHP file to fetch video metadata -->
+
         <video autoplay loop muted playsinline class="cover-video">
-            <source type="video/mp4">
+            <?php if (!empty($video_src) && !empty($video_type)): ?>
+                <source src="<?php echo $video_src; ?>" type="<?php echo $video_type; ?>">
+            <?php else: ?>
+                <p>Video not available.</p>
+            <?php endif; ?>
         </video>
+
+
 
         <div class="container search-container">
             <div class="tag-line-content">
@@ -73,17 +81,19 @@
     </div>
 
     <!-- About Section -->
+    <?php include 'fetch_aboutus_home.php'; ?> <!-- Include the PHP file to fetch data -->
+
     <div class="container short_content_about">
         <div class="content">
-            <h2>About Us</h2>
+            <h2><?php echo $title; ?></h2> <!-- Display the title -->
             <p>
-                At <span>Abir Printers</span>, innovation and craftsmanship are at the heart of everything we do. We are dedicated to delivering excellence, continually evolving our printing solutions with cutting-edge technology.
-                Our passionate team pushes the limits to provide quality prints that leave lasting impressions and help shape a brighter, more creative future.
+                <?php echo $content; ?> <!-- Display the content -->
             </p>
             <button class="read_more_btn">More About Us</button>
         </div>
-        <img class="printing_image" src="assets/images/about.jpg" alt="abir_printers">
+        <img class="printing_image" src="<?php echo $image_path; ?>" alt="abir_printers"> <!-- Display the image -->
     </div>
+
 
     <!-- Partners Scroller -->
     <div class="scroller" data-speed="fast">
@@ -98,25 +108,23 @@
     <button class="explore_btn">Explore Our Business</button>
 
     <!-- Future Planning Section -->
+    <?php include 'fetch_vision_home.php'; ?>
+
     <div class="container future-planning">
         <div class="future_of_abir_printers">
             <div class="images_of_planning">
-                <img src="assets/images/1.jpg" alt="1">
-                <img src="assets/images/2.jpg" alt="2">
-                <img src="assets/images/3.jpg" alt="3">
-                <img src="assets/images/future.jpg" alt="future">
+                <?php foreach ($image_paths as $image): ?>
+                    <img src="<?php echo $image; ?>" alt="Future Planning Image">
+                <?php endforeach; ?>
             </div>
             <div class="stories_of_planning">
-                <h2>Vision</h2>
-                <p>
-                    In a world where ideas are constantly evolving and businesses seek to make their mark, Abir Printers has stood the test of time by continually adapting to change and embracing the future of printing technology.
-                    Founded in the heart of the city, Abir Printers began as a small family-run printing press, focused on delivering high-quality prints to local businesses, authors, and students.
-                    But as time passed, the vision for the company grew larger, driven by a passion to redefine what printing could achieve.
-                </p>
+                <h2><?php echo $title; ?></h2>
+                <p><?php echo $content; ?></p>
             </div>
         </div>
         <button class="future-btn">Our Vision</button>
     </div>
+
 
     <!-- Gallery Section -->
     <div class="our_gallery">
@@ -124,15 +132,13 @@
         <div class="swipe">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/images/1.JPG" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="assets/images/2.JPG" alt="Image 2"></div>
-                    <div class="swiper-slide"><img src="assets/images/3.JPG" alt="Image 3"></div>
-                    <div class="swiper-slide"><img src="assets/images/4.JPG" alt="Image 4"></div>
+                    <?php include 'fetch_gallery_img.php'; ?>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="section-p1" id="footer"></footer>
