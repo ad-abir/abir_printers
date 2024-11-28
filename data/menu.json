@@ -2,7 +2,7 @@
     "menuItems": [
       {
         "name": "Home",
-        "link": "home.html"
+        "link": "home.php"
       },
       {
         "name": "About Us",
