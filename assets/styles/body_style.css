@@ -20,6 +20,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f0f8ff;
+    /* background: url('../images/background1.jpg'); */
+    /* background-size: cover; */
 }
 
 .mf-cursor {
