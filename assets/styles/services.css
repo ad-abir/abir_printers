@@ -130,3 +130,24 @@ swiper-container {
     text-align: left;
     word-wrap: break-word;
 }
+
+
+.box {
+    display: block;
+    background: lightblue;
+    margin-bottom: 1em;
+    overflow: hidden; /* Ensures content doesn't spill out during transition */
+  }
+  
+  #fade-in {
+    height: 0; /* Initially collapsed */
+    width: 500px; /* Define width for animation */
+    opacity: 0; /* Hidden at start */
+    transition: all 0.75s ease; /* Smooth transition for both height and opacity */
+  }
+  
+  #fade-in.show {
+    height: auto; /* Expands to fit content */
+    opacity: 1; /* Fully visible */
+  }
+  
