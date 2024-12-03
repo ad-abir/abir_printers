@@ -43,3 +43,97 @@ p {
 .service-item p {
     color: #777;
 }  */
+
+
+.short-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    position: relative;
+    overflow: hidden; /* Ensures no content overflows outside */
+}
+
+.short-video h1 {
+    position: absolute;
+    top: 10%;
+    margin: 0px 0px 0px 900px;
+    transform: translate(0, -50%);
+    z-index: 2;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 4px black;
+    text-stroke: 2px black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    --animate-duration: 3s;
+}
+
+.short-video h1.visible {
+    left: 140px;
+    opacity: 1;
+}
+
+.short-about-video {
+    width: 750px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    /* Fading effect */
+    mask-image: linear-gradient(to left, transparent, black 80%);
+    -webkit-mask-image: linear-gradient(to left, transparent, black 80%);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: glowPulse 2s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.play-button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 18px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 35px rgba(255, 255, 255, 0.5);
+}
