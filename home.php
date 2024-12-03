@@ -89,14 +89,16 @@
             <p>
                 <?php echo $content; ?> <!-- Display the content -->
             </p>
-            <button class="read_more_btn">More About Us</button>
+            <a href="about_us.php">
+                <button class="read_more_btn">More About Us</button>
+            </a>
         </div>
         <img class="printing_image" src="<?php echo $image_path; ?>" alt="abir_printers"> <!-- Display the image -->
     </div>
 
 
     <!-- Partners Scroller -->
-    <div class="scroller" data-speed="fast">
+    <div class="scroller" data-speed="fast" data-cursor-text="Welcome">
         <h2>Our Partners</h2>
         <div class="scroller__inner" id="partner-list">
             <?php include 'fetch_partners_img.php'; ?> 
