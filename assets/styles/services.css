@@ -151,3 +151,73 @@ swiper-container {
     opacity: 1; /* Fully visible */
   }
   
+  .service-header {
+    text-align: left;
+    padding: 20px;
+    margin: 20px 0px 0px 50px;
+    line-height: 1.5;
+    /* font-family: 'Arial', sans-serif; */
+    color: #333;
+}
+
+.service-header p {
+    max-width: 800px;
+}
+
+.service-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 600px;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 1.2;
+}
+
+.service-header h1 br {
+    content: '';
+    display: block;
+    margin-bottom: 10px;
+}
+
+.service-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 50px; /* Space between items */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.service-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.service-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
