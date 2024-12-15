@@ -25,15 +25,27 @@
 </head>
 
 <body>
-    <div class="page-cover" id="about-cover">
+
+    <div class="cover">
+        <video autoplay loop muted playsinline class="cover-video">
+            <source src="assets/video/aboutus_cover.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="tag-line-content">
+                <h1><span>Who are <br>We?</span></h1>
+            </div>
+    </div>
+
+
+    <!-- <div class="page-cover" id="about-cover"> -->
         <!-- Dynamic background image will be applied here -->
-        <h1>
+        <!-- <h1>
             <span data-text="Turning Your Vision Into Vibrant Prints.">Turning Your Vision Into Vibrant Prints.</span>
             <span data-text="Know more About Us">Know more
                 <a href="about_us.html" class="highlight">About Us</a>
             </span>
         </h1>
-    </div>
+    </div> -->
 
     <div class="center" id="preloader">
         <div class="ring"></div>
